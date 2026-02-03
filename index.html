@@ -22,7 +22,7 @@
       background: rgba(255, 255, 255, 0.1);
       padding: 40px;
       border-radius: 20px;
-      max-width: 400px;
+      max-width: 500px;
       z-index: 2;
       position: relative;
     }
@@ -71,30 +71,32 @@
 
 <body>
 
-  <!-- 🎵 Music stays alive -->
+  <!-- 🎵 Background music -->
   <audio id="bgMusic" loop>
     <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_5d2f6bb0fa.mp3" type="audio/mpeg">
   </audio>
 
   <!-- CONTENT WRAPPER -->
   <div id="content" class="card">
-    <h1>For My SuperNova💜</h1>
+    <h1>Hey Beautiful SN💜</h1>
     <p>
-      From every level we’ve played to every moment we’ve shared,
-      you remain my SuperNova.
+      From every game we’ve played to every moment we’ve shared,
+      you remain my SuperrrNovaaaa.
     </p>
-    <p>Will you be my Valentine baby?</p>
+    <p>Will you be my Valentine?</p>
     <button onclick="yesClicked()">Yes, always 💜</button>
   </div>
 
   <script>
     function yesClicked() {
-      // Change content ONLY (not body)
+      // Replace only content, keep audio alive
       document.getElementById("content").outerHTML = `
         <div class="final">
           <h1>LEVEL: US 🌌</h1>
           <p>Same team. Same energy. Always.</p>
+          <p>Every game, every laugh, you make my world brighter.</p>
           <p>Happy Valentine’s Day in advance, my SuperrrNovaaaa 💜</p>
+          <p>Forever your player two🌌💜</p>
         </div>
       `;
 
