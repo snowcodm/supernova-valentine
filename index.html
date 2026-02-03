@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My SuperNova 💜</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #2c003e, #6a0dad);
+      color: white;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 400px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      background: #bb86fc;
+      color: #2c003e;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e0c3ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Nova 💜</h1>
+    <p>
+      From every level we’ve played to every moment we’ve shared,
+      you remain my SuperNova.
+    </p>
+    <p>
+      Will you be my Valentine?
+    </p>
+    <button onclick="yesClicked()">Yes, always 💜</button>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="text-align:center; color:white;">
+          <h1>LEVEL: US 🌌</h1>
+          <p>
+            Same team. Same energy. Always.
+          </p>
+          <p>
+            Happy Valentine’s Day, my SuperNova 💜
+          </p>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
